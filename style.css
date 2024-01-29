@@ -8,7 +8,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 110vh;
+    height: 130vh;
     background: linear-gradient(180deg, darkblue, rgb(0, 136, 255) 30%);
     text-align: right;
     align-items: center;
@@ -25,6 +25,7 @@ body {
     justify-content: center;
     gap: 10px;
     margin: auto;
+    margin-top: 5%;
 }
 
 .head header.allah {

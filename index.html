@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -15,44 +15,26 @@
         <div class="color"></div>
     </div>
 
-    
-    <div class="head">
+
+    <div class="header">
         <header class='allah'>بسم الله الرحمن الرحيم</header>
         <header class='main-title'>مواقيت صلوات مدن السودان</header>
         <p>قم بتحديد المدينة التي تريد معرفة مواقيت الصلوات لها حسب تاريخ اليوم</p>
         <h3 id="head-date"></h3>
-        <h3 id="head-city"></h3>
     </div>
 
-    <div class='cities'>
-        <select onchange="getPrayerTimings(this.value)" id="cities-select">
-            <option value="no">حدد المدينة</option>
-        </select>
+    <select onchange="getPrayerTimings(this.value)" id="cities-select">
+        <option value="no">حدد المدينة</option>
+    </select>
+
+    <div class="location-box">
+        <h3 id="head-city"></h3>
+        <p id="head-state"></p>
     </div>
 
     <div class='prayers'>
-        
+
     </div>
-
-
-    <footer class='footer'>
-        <div class='footer-inner'>
-            <div class="footer-inner-left">
-                <p>قمت بإحتيار مدينة من كل ولاية من ولايات السودان الثمانية عشر ما عدا الولاية الشمالية التي اخترنا منها
-                    مدينتي دنقلا و وادي حلفا نسبة لكبر مساحتها</p>
-                <p>أما ولايتي كسلا و سنار فقمت بإختيار اسم الولاية نسبة لصغر المساحة نسبيَا</p>
-                <p>جميع بيانات المواقيت مأخوذة من موقع الأذّان</p>
-                <a href="https://aladhan.com">aladhan.com</a>
-            </div>
-            <div class="footer-inner-right">
-                <p>: المطور</p>
-                <p>(مطوّر ويب)أيمن عبدالعزيز إلياس بابكر</p>
-                <p>aimandabora167@gmail.com</p>
-                <p>+249 902854949</p>
-            </div>
-        </div>
-        <h1>الحمدلله</h1>
-    </footer>
 
     <script src="./main.js"></script>
 </body>

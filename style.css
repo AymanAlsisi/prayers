@@ -1,186 +1,119 @@
+@font-face {
+    font-family: "Zain";
+    src: url("./Zain/Zain-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Zain-Black";
+    src: url("./Zain/Zain-ExtraBold.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
-    text-align: center;
+    font-family: "Zain";
 }
-
 
 body {
     display: flex;
     flex-direction: column;
-    height: 130vh;
-    background: linear-gradient(180deg, darkblue, rgb(0, 136, 255) 30%);
-    text-align: right;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    gap: 6px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #00379c, #9acef8);
 }
 
-
-.head {
-    width: 100%;
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: auto;
-    margin-top: 5%;
-}
-
-.head header.allah {
-    font-size: xx-large;
-    font-weight: 700;
-}
-
-.head header.main-title {
-    font-size: xxx-large;
-    font-weight: 900;
-}
-
-.head p {
-    font-size: large;
-    font-weight: 700;
-}
-
-#head-hiri {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: 1.4rem;
-}
-
-.head #head-city {
-    font-size: 400%;
-}
-
-.cities {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
-.cities select {
-    outline: none;
-    width: 30%;
-    border-radius: 6px;
+    padding: 3%;
     text-align: center;
-    font-size: large;
-    color: darkblue;
-    cursor: pointer;
-    font-size: 1.3rem;
-    font-weight: 900;
-    padding: 0 3%;
-    border: none;
 }
 
-.prayers {
-    width: 80%;
-    margin: auto;
+.header .allah {
+    font-size: 17px;
+}
+
+.header .main-title {
+    font-size: 33px;
+    font-family: "Zain-Black";
+}
+
+.header p {
+    font-size: 20px;
+}
+
+.empty {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.empty p {
     text-align: center;
-    padding: 0.5%;
-    border-radius: 8px;
-}
-
-.prayers ul {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 0.1%;
-    row-gap: 0.4%;
-    align-items: center;
-    list-style: none;
-    margin: auto;
-    font-weight: 700;
-    font-size: large;
-}
-
-.prayers li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1%;
-    height: 100%;
-    width: 70%;
-    background-color: #fff;
-}
-
-.prayers li p {
-    color: darkblue;
-    width: 100%;
-    font-weight: 900;
-}
-
-.prayers p.prayers-title {
-    padding: 0.8%;
-    background: darkblue;
-    color: #fff;
-}
-
-
-
-body.div {
-    margin-bottom: 1%;
-}
-
-.footer {
-    margin-top: auto;
-    padding: 0.5%;
-    padding-top: 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1%;
-    background-color: darkblue;
-    width: 99%;
-}
-
-.footer .footer-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    column-gap: 6%;
-    row-gap: 1%;
-}
-
-.footer .footer-inner div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1%;
-}
-
-.footer .footer-inner div p,
-.footer .footer-inner div a {
-    font-size: large;
-    font-weight: 700;
-}
-
-.footer .footer-inner div a {
-    color: #fff;
-}
-
-.footer .footer-inner div a:hover {
-    color: rgb(149, 0, 255);
+    font-size: 27px;
 }
 
 .loading {
-    font-size: 2rem;
-    padding: 1%;
-    border-radius: 6px;
-    color: rgb(0, 32, 76);
-    width: 60%;
+    font-size: 27px;
 }
 
 .loading::before {
-    content: "يرجى الإنتظار";
+    content: "جاري التحميل";
+}
+
+select {
+    outline: none;
+    border: none;
+    width: 70%;
+    padding: 4px;
+    font-size: 17px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.location-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#head-city {
+    font-size: 30px;
+    font-family: "Zain-Black";
+}
+
+#head-state {
+    font-size: 24px;
+    font-family: "Zain-Black";
+}
+
+.prayers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.prayers .prayers-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    background-color: #1d1db3;
+    border-radius: 5px;
+    list-style: none;
+}
+.prayers .prayers-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+.prayers .prayers-list li .prayer-title {
+    font-family: "Zain-Black";
 }

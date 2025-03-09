@@ -129,7 +129,7 @@ const getPrayerTimings = (city) => {
         }
         else if (city === 'Al Jinena') {
             city = 'الجنينة'
-            state = "ولاية جنوب دارفور"
+            state = "ولاية غرب دارفور"
         }
         else if (city === 'Sennar') {
             city = 'سنار'

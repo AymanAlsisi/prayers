@@ -25,7 +25,7 @@ const Cities = [
     { en: "Nyala", ar: "نيالا" },
     { en: "Al Deain", ar: "الضعين" },
     { en: "Zalingei", ar: "زالنجي" },
-    { en: "Al Ubayyid", ar: "الأبيّض" },
+    { en: "Al Ubayyid", ar: "الأُبَيّض" },
     { en: "Kadugli", ar: "كادقلي" },
     { en: "Al Fulah", ar: "الفولة" },
     { en: "Sennar", ar: "سنار" },
@@ -100,7 +100,7 @@ const getPrayerTimings = (city) => {
             state = "ولاية شمال دارفور"
         }
         else if (city === 'Al Ubayyid') {
-            city = 'الأبيّض'
+            city = 'الأُبَيّض'
             state = "ولاية شمال كردفان"
         }
         else if (city === 'Kusti') {
